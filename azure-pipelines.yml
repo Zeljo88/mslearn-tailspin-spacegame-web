@@ -40,7 +40,6 @@ steps:
   inputs:
     command: 'build'
     arguments: '--no-restore --configuration Release'
-<<<<<<< HEAD
     projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
@@ -55,6 +54,3 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
-=======
-    projects: '**/*.csproj'
->>>>>>> 98cd6b2 (Add build tasks)
